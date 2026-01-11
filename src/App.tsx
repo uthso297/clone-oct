@@ -1,6 +1,7 @@
 import ClientShowcase from "./Components/ClientShowCase"
 import Hero from "./Components/Hero"
 import TechnicalCapabilities from "./Components/TechnicalCapabilities"
+import TechStackCarousel from "./Components/TechStackCarousel"
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
      <Hero></Hero>
      <ClientShowcase></ClientShowcase>
      <TechnicalCapabilities></TechnicalCapabilities>
+     <TechStackCarousel></TechStackCarousel>
     </>
   )
 }
