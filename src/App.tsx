@@ -1,5 +1,6 @@
 import AboutUs from "./Components/AboutUs"
 import ClientShowcase from "./Components/ClientShowCase"
+import FloatingCTA from "./Components/FloatingCTA"
 import Footer from "./Components/Footer"
 import Hero from "./Components/Hero"
 import OurAchievements from "./Components/OurAchievements"
@@ -14,6 +15,7 @@ function App() {
 
   return (
     <>
+     <FloatingCTA />
      <Hero></Hero>
      <ClientShowcase></ClientShowcase>
      <TechnicalCapabilities></TechnicalCapabilities>
