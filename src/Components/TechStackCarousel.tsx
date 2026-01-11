@@ -17,9 +17,12 @@ const techStack = [
 // Duplicate the array for a seamless infinite scroll
 const duplicatedStack = [...techStack, ...techStack];
 
+import { useState } from 'react';
+
 export default function TechStackCarousel() {
+  const [paused, setPaused] = useState(false);
   return (
-    <section className="bg-[#F8FAFC] py-24 overflow-hidden">
+    <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-6">
           Our Tech Stack
@@ -42,7 +45,11 @@ export default function TechStackCarousel() {
         <div className="pointer-events-none absolute right-0 z-10 h-full w-32 bg-gradient-to-l from-[#F8FAFC] to-transparent" />
 
         {/* The Animated Track */}
-        <div className="flex gap-6 animate-marquee hover:[animation-play-state:paused]">
+        <div
+          className={`flex gap-6 ${paused ? '' : 'animate-marquee'}`}
+          onMouseEnter={() => setPaused(true)}
+          onMouseLeave={() => setPaused(false)}
+        >
           {duplicatedStack.map((tech, index) => (
             <div
               key={index}
@@ -53,7 +60,7 @@ export default function TechStackCarousel() {
                 <img 
                   src={tech.logo} 
                   alt={tech.name} 
-                  className="max-w-full max-h-full object-contain filter grayscale hover:grayscale-0 transition-all"
+                  className="max-w-full max-h-full object-contain transition-all"
                   onError={(e) => {
                     // Fallback for missing images
                     e.currentTarget.src = `https://ui-avatars.com/api/?name=${tech.name}&background=random`;
