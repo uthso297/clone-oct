@@ -3,7 +3,20 @@ import { ArrowRight } from "lucide-react";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-white">
-      <div className="mx-auto max-w-7xl px-6 pt-28 pb-24 text-center">
+      <div className="mx-auto max-w-7xl px-6 pt-28 pb-24 text-center flex flex-col items-center">
+        
+        {/* Status Pill */}
+        <div className="mb-8 flex items-center gap-2 rounded-full border border-neutral-100 bg-neutral-50/50 px-4 py-1.5 shadow-sm">
+          <span className="relative flex h-2 w-2">
+            {/* Blinking effect */}
+            <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-blue-400 opacity-75"></span>
+            {/* Static dot */}
+            <span className="relative inline-flex h-2 w-2 rounded-full bg-blue-600"></span>
+          </span>
+          <p className="text-xs font-bold tracking-wide text-neutral-600">
+            Accepting New Enterprise Clients for 2025
+          </p>
+        </div>
 
         {/* Heading */}
         <h1 className="text-5xl font-semibold leading-tight tracking-tight text-neutral-900 md:text-6xl lg:text-7xl">
