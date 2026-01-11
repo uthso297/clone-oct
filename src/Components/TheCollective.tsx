@@ -28,7 +28,7 @@ export default function TheCollective() {
         {/* Header Section */}
         <div className="mb-20">
           <h2 className="text-6xl font-bold text-white mb-6">
-            The <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">Collective</span>
+            The <span className="text-transparent bg-clip-text bg-linear-to-r from-blue-400 to-purple-500">Collective</span>
           </h2>
           <p className="max-w-md text-neutral-400 text-sm leading-relaxed">
             We are a multidisciplinary team of engineers, researchers, and strategists dedicated to the future of work.
@@ -38,7 +38,7 @@ export default function TheCollective() {
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           
           {/* Left Side: Dynamic Image Card */}
-          <div className="relative w-full lg:w-[400px] aspect-[3/4] rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ease-in-out">
+          <div className="relative w-full lg:w-100 aspect-3/4 rounded-2xl overflow-hidden shadow-2xl transition-all duration-700 ease-in-out">
             {/* Background Image with Key-based re-render for smooth fade */}
             <img
               key={activeMember.id}
@@ -48,7 +48,7 @@ export default function TheCollective() {
             />
             
             {/* Bottom Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/20 to-transparent" />
             
             {/* Floating Info on Image */}
             <div className="absolute bottom-0 left-0 p-6 w-full">

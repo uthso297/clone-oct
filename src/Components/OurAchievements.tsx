@@ -35,7 +35,7 @@ export default function OurAchievements() {
           {achievements.map((item, index) => (
             <div
               key={index}
-              className="group flex flex-col items-center text-center p-12 bg-white rounded-[32px] border border-neutral-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
+              className="group flex flex-col items-center text-center p-12 bg-white rounded-4xl border border-neutral-100 shadow-sm transition-all duration-300 hover:shadow-xl hover:-translate-y-2"
             >
               {/* Circular Icon Wrapper */}
               <div className="mb-8 p-6 rounded-full bg-blue-50 transition-colors duration-300 group-hover:bg-blue-100">
@@ -46,7 +46,7 @@ export default function OurAchievements() {
               <h3 className="text-xl font-bold text-neutral-900 mb-4">
                 {item.title}
               </h3>
-              <p className="text-neutral-500 text-sm leading-relaxed max-w-[240px]">
+              <p className="text-neutral-500 text-sm leading-relaxed max-w-60">
                 {item.description}
               </p>
             </div>

@@ -38,14 +38,14 @@ export default function ClientShowcase() {
       {/* Container with Faded Edges */}
       <div className="group relative flex overflow-hidden">
         {/* Left Gradient Overlay (Fade effect) */}
-        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-white to-transparent" />
+        <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-linear-to-r from-white to-transparent" />
         
         {/* The Animated Track */}
         <div ref={marqueeRef} className="flex gap-6 animate-marquee whitespace-nowrap">
           {duplicatedClients.map((client, i) => (
             <div
               key={i}
-              className="relative aspect-video w-[320px] md:w-[400px] flex-shrink-0 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-sm transition-transform duration-300 hover:scale-[1.02]"
+              className="relative aspect-video w-[320px] md:w-100 shrink-0 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-sm transition-transform duration-300 hover:scale-[1.02]"
               onMouseEnter={handleMouseEnter}
               onMouseLeave={handleMouseLeave}
             >
@@ -67,7 +67,7 @@ export default function ClientShowcase() {
         </div>
 
         {/* Right Gradient Overlay (Fade effect) */}
-        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-gradient-to-l from-white to-transparent" />
+        <div className="pointer-events-none absolute right-0 top-0 z-10 h-full w-32 bg-linear-to-l from-white to-transparent" />
       </div>
     </section>
   );

@@ -41,7 +41,7 @@ export default function ProvenResults() {
               Proven Results.
             </h2>
           </div>
-          <div className="text-neutral-500 text-lg mt-6 md:mt-0 md:text-right leading-snug max-w-[280px]">
+          <div className="text-neutral-500 text-lg mt-6 md:mt-0 md:text-right leading-snug max-w-70">
             <p>We don't just build software.</p>
             <p>We engineer business outcomes.</p>
           </div>
@@ -52,7 +52,7 @@ export default function ProvenResults() {
           {projects.map((project, index) => (
             <div
               key={index}
-              className="group relative aspect-[4/5] overflow-hidden rounded-[32px] bg-neutral-100 shadow-sm transition-all duration-500 hover:shadow-2xl"
+              className="group relative aspect-4/5 overflow-hidden rounded-4xl bg-neutral-100 shadow-sm transition-all duration-500 hover:shadow-2xl"
             >
               {/* Background Image with Zoom Effect */}
               <img
@@ -62,7 +62,7 @@ export default function ProvenResults() {
               />
 
               {/* Gradient Overlay (Darkens from bottom to middle) */}
-              <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent" />
+              <div className="absolute inset-0 bg-linear-to-t from-black/90 via-black/40 to-transparent" />
 
               {/* Content Overlay */}
               <div className="absolute inset-0 p-8 flex flex-col justify-end">

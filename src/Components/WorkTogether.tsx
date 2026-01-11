@@ -16,7 +16,7 @@ export default function WorkTogether() {
         <div className="relative overflow-hidden rounded-[48px] bg-[#0F172A] py-20 px-6 text-center shadow-2xl">
           
           {/* Subtle Background Radial Gradient for "Glow" Effect */}
-          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-[600px] h-[600px] bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
+          <div className="absolute top-0 right-0 -translate-y-1/2 translate-x-1/4 w-150 h-150 bg-blue-500/10 blur-[120px] rounded-full pointer-events-none" />
 
           <div className="relative z-10 flex flex-col items-center">
             <h3 className="text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight">

@@ -22,7 +22,7 @@ import { useState } from 'react';
 export default function TechStackCarousel() {
   const [paused, setPaused] = useState(false);
   return (
-    <section className="bg-gradient-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
+    <section className="bg-linear-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
         <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-6">
           Our Tech Stack
@@ -41,8 +41,8 @@ export default function TechStackCarousel() {
       {/* Infinite Carousel Container */}
       <div className="relative flex items-center">
         {/* Faded edges effect to match image */}
-        <div className="pointer-events-none absolute left-0 z-10 h-full w-32 bg-gradient-to-r from-[#F8FAFC] to-transparent" />
-        <div className="pointer-events-none absolute right-0 z-10 h-full w-32 bg-gradient-to-l from-[#F8FAFC] to-transparent" />
+        <div className="pointer-events-none absolute left-0 z-10 h-full w-32 bg-linear-to-r from-[#F8FAFC] to-transparent" />
+        <div className="pointer-events-none absolute right-0 z-10 h-full w-32 bg-linear-to-l from-[#F8FAFC] to-transparent" />
 
         {/* The Animated Track */}
         <div
@@ -53,7 +53,7 @@ export default function TechStackCarousel() {
           {duplicatedStack.map((tech, index) => (
             <div
               key={index}
-              className="flex flex-col items-center justify-center min-w-[180px] h-[160px] bg-white border border-neutral-100 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02]"
+              className="flex flex-col items-center justify-center min-w-45 h-40 bg-white border border-neutral-100 rounded-2xl shadow-sm transition-all duration-300 hover:shadow-md hover:scale-[1.02]"
             >
               {/* Logo Placeholder - Replace src with your actual paths */}
               <div className="w-12 h-12 mb-4 flex items-center justify-center">

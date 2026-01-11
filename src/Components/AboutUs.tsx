@@ -1,4 +1,3 @@
-import React from 'react';
 import { Award, Clock, Target, Heart } from 'lucide-react';
 
 const stats = [
@@ -37,9 +36,9 @@ export default function AboutUs() {
         </div>
 
         {/* Main Welcome Card */}
-        <div className="relative bg-white rounded-[32px] shadow-sm border border-neutral-100 p-12 mb-8 overflow-hidden text-center">
+        <div className="relative bg-white rounded-4xl shadow-sm border border-neutral-100 p-12 mb-8 overflow-hidden text-center">
           {/* Top Gradient Border */}
-          <div className="absolute top-0 left-0 right-0 h-1.5 bg-gradient-to-r from-blue-500 via-indigo-500 to-purple-500" />
+          <div className="absolute top-0 left-0 right-0 h-1.5 bg-linear-to-r from-blue-500 via-indigo-500 to-purple-500" />
           
           <p className="text-neutral-500 text-lg mb-8">Welcome.</p>
           
@@ -60,7 +59,7 @@ export default function AboutUs() {
           {stats.map((item, index) => (
             <div
               key={index}
-              className={`flex flex-col items-center justify-center p-8 rounded-[24px] shadow-sm transition-transform hover:-translate-y-1 duration-300 min-h-[180px] text-center
+              className={`flex flex-col items-center justify-center p-8 rounded-3xl shadow-sm transition-transform hover:-translate-y-1 duration-300 min-h-45 text-center
                 ${item.primary 
                   ? 'bg-blue-600 text-white shadow-blue-200' 
                   : 'bg-white text-neutral-900 border border-neutral-100'
