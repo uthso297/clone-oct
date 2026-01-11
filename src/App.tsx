@@ -5,6 +5,7 @@ import OurAchievements from "./Components/OurAchievements"
 import ProvenResults from "./Components/ProvenResults"
 import TechnicalCapabilities from "./Components/TechnicalCapabilities"
 import TechStackCarousel from "./Components/TechStackCarousel"
+import TheCollective from "./Components/TheCollective"
 import WorkTogether from "./Components/WorkTogether"
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
      <AboutUs></AboutUs>
      <OurAchievements></OurAchievements>
      <WorkTogether></WorkTogether>
+     <TheCollective></TheCollective>
     </>
   )
 }
