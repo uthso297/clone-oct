@@ -1,3 +1,5 @@
+import { useRef } from 'react';
+
 const clients = [
   { id: 11, image: "/clients/client1.webp" },
   { id: 12, image: "/clients/client2.webp" },
@@ -9,6 +11,19 @@ const clients = [
 const duplicatedClients = [...clients, ...clients];
 
 export default function ClientShowcase() {
+  const marqueeRef = useRef<HTMLDivElement>(null);
+
+  const handleMouseEnter = () => {
+    if (marqueeRef.current) {
+      marqueeRef.current.style.animationPlayState = 'paused';
+    }
+  };
+
+  const handleMouseLeave = () => {
+    if (marqueeRef.current) {
+      marqueeRef.current.style.animationPlayState = 'running';
+    }
+  };
   return (
     <section className="bg-white py-24 overflow-hidden">
       <div className="mx-auto max-w-7xl px-6 mb-16 text-center">
@@ -26,11 +41,13 @@ export default function ClientShowcase() {
         <div className="pointer-events-none absolute left-0 top-0 z-10 h-full w-32 bg-gradient-to-r from-white to-transparent" />
         
         {/* The Animated Track */}
-        <div className="flex gap-6 animate-marquee hover:[animation-play-state:paused] whitespace-nowrap">
+        <div ref={marqueeRef} className="flex gap-6 animate-marquee whitespace-nowrap">
           {duplicatedClients.map((client, i) => (
             <div
               key={i}
               className="relative aspect-video w-[320px] md:w-[400px] flex-shrink-0 overflow-hidden rounded-2xl border border-neutral-200 bg-neutral-100 shadow-sm transition-transform duration-300 hover:scale-[1.02]"
+              onMouseEnter={handleMouseEnter}
+              onMouseLeave={handleMouseLeave}
             >
               {/* Badge Styling */}
               <div className="absolute left-4 top-4 z-20">
