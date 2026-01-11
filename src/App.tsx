@@ -1,3 +1,4 @@
+import AboutUs from "./Components/AboutUs"
 import ClientShowcase from "./Components/ClientShowCase"
 import Hero from "./Components/Hero"
 import ProvenResults from "./Components/ProvenResults"
@@ -14,6 +15,7 @@ function App() {
      <TechnicalCapabilities></TechnicalCapabilities>
      <TechStackCarousel></TechStackCarousel>
      <ProvenResults></ProvenResults>
+     <AboutUs></AboutUs>
     </>
   )
 }
