@@ -1,5 +1,6 @@
 import ClientShowcase from "./Components/ClientShowCase"
 import Hero from "./Components/Hero"
+import TechnicalCapabilities from "./Components/TechnicalCapabilities"
 
 function App() {
 
@@ -8,6 +9,7 @@ function App() {
     <>
      <Hero></Hero>
      <ClientShowcase></ClientShowcase>
+     <TechnicalCapabilities></TechnicalCapabilities>
     </>
   )
 }
