@@ -1,4 +1,5 @@
 import AboutUs from "./Components/AboutUs"
+import ChatbotUI from "./Components/ChatBotUI"
 import ClientShowcase from "./Components/ClientShowCase"
 import FloatingCTA from "./Components/FloatingCTA"
 import Footer from "./Components/Footer"
@@ -10,28 +11,29 @@ import TechnicalCapabilities from "./Components/TechnicalCapabilities"
 import TechStackCarousel from "./Components/TechStackCarousel"
 import TheCollective from "./Components/TheCollective"
 import WorkTogether from "./Components/WorkTogether"
+
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-
 function App() {
-
-
   return (
     <Router>
       <FloatingCTA />
+      
+      <ChatbotUI />
+
       <Routes>
         <Route path="/" element={
           <>
-            <Hero></Hero>
-            <ClientShowcase></ClientShowcase>
-            <TechnicalCapabilities></TechnicalCapabilities>
-            <TechStackCarousel></TechStackCarousel>
-            <ProvenResults></ProvenResults>
-            <AboutUs></AboutUs>
-            <OurAchievements></OurAchievements>
-            <WorkTogether></WorkTogether>
-            <TheCollective></TheCollective>
-            <Footer></Footer>
+            <Hero />
+            <ClientShowcase />
+            <TechnicalCapabilities />
+            <TechStackCarousel />
+            <ProvenResults />
+            <AboutUs />
+            <OurAchievements />
+            <WorkTogether />
+            <TheCollective />
+            <Footer />
           </>
         } />
         <Route path="/project/:id" element={<ProjectDetails />} />
