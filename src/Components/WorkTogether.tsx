@@ -28,7 +28,7 @@ export default function WorkTogether() {
             </p>
 
             {/* Primary Action Button */}
-            <button className="group flex items-center gap-2 bg-blue-600 hover:bg-blue-700 text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95">
+            <button className="group flex items-center gap-2 bg-black hover:bg-white hover:text-black text-white px-10 py-5 rounded-full font-bold text-lg transition-all shadow-lg hover:shadow-blue-500/25 active:scale-95">
               Partner with Us
               <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
             </button>
