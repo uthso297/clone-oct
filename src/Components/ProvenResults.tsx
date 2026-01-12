@@ -1,7 +1,9 @@
 import { ArrowUpRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const projects = [
   {
+    id: 1,
     title: "Voice AI Appointment Booking - Cal and GoHighLevel Integration",
     description: "Setup Voice AI agent and book appointment in your calendar.",
     // image: "/cases/voice-ai.webp",
@@ -9,6 +11,7 @@ const projects = [
     link: "#",
   },
   {
+    id: 2,
     title: "GHL Automation Specialist | Automation Solutions",
     description: "In-depth process assessment and execution of workflows with Zapier and Make.",
     tag: "MARKETING AUTOMATIONS",
@@ -17,6 +20,7 @@ const projects = [
     link: "#",
   },
   {
+    id: 3,
     title: "GoHighLevel Custom Dashboard",
     description: "Custom UI/UX dashboard built to track leads and conversion rates in real-time.",
     tag: "CUSTOM DASHBOARD",
@@ -85,12 +89,12 @@ export default function ProvenResults() {
                 </p>
 
                 {/* View Case Study Link */}
-                <div className="flex items-center gap-2 text-white/90 group/btn cursor-pointer">
+                <Link to={`/project/${project.id}`} className="flex items-center gap-2 text-white/90 group/btn cursor-pointer">
                   <span className="text-sm font-semibold border-b border-transparent group-hover/btn:border-white transition-all">
                     View Case Study
                   </span>
                   <ArrowUpRight className="w-4 h-4 transition-transform group-hover/btn:-translate-y-0.5 group-hover/btn:translate-x-0.5" />
-                </div>
+                </Link>
               </div>
             </div>
           ))}
