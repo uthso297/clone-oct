@@ -8,7 +8,7 @@ const ChatbotUI = () => {
   ]);
   const [input, setInput] = useState('');
 
-  const handleSend = (e) => {
+  const handleSend = (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     if (!input.trim()) return;
 

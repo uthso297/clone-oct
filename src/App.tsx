@@ -7,6 +7,7 @@ import Hero from "./Components/Hero"
 import OurAchievements from "./Components/OurAchievements"
 import ProjectDetails from "./Components/ProjectDetails"
 import ProvenResults from "./Components/ProvenResults"
+import ScrollToTop from "./Components/ScrollToTop"
 import TechnicalCapabilities from "./Components/TechnicalCapabilities"
 import TechStackCarousel from "./Components/TechStackCarousel"
 import TheCollective from "./Components/TheCollective"
@@ -20,6 +21,8 @@ function App() {
       <FloatingCTA />
       
       <ChatbotUI />
+
+      <ScrollToTop></ScrollToTop>
 
       <Routes>
         <Route path="/" element={
