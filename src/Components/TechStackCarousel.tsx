@@ -22,9 +22,9 @@ import { useState } from 'react';
 export default function TechStackCarousel() {
   const [paused, setPaused] = useState(false);
   return (
-    <section className="bg-linear-to-br from-blue-50 to-purple-50 py-24 overflow-hidden">
+    <section className="bg-linear-to-br-from-blue-50-to-purple-50 py-24 overflow-hidden">
       <div className="max-w-7xl mx-auto px-6 text-center mb-16">
-        <h2 className="text-4xl md:text-5xl font-bold text-[#0F172A] mb-6">
+        <h2 className="text-4xl md:text-5xl font-bold text-neutral-900 mb-6">
           Our Tech Stack
         </h2>
         <p className="max-w-2xl mx-auto text-neutral-500 text-lg leading-relaxed">
@@ -41,8 +41,8 @@ export default function TechStackCarousel() {
       {/* Infinite Carousel Container */}
       <div className="relative flex items-center">
         {/* Faded edges effect to match image */}
-        <div className="pointer-events-none absolute left-0 z-10 h-full w-32 bg-linear-to-r from-[#F8FAFC] to-transparent" />
-        <div className="pointer-events-none absolute right-0 z-10 h-full w-32 bg-linear-to-l from-[#F8FAFC] to-transparent" />
+        <div className="pointer-events-none absolute left-0 z-10 h-full w-32 bg-linear-to-r-from-white-to-transparent" />
+        <div className="pointer-events-none absolute right-0 z-10 h-full w-32 bg-linear-to-l-from-white-to-transparent" />
 
         {/* The Animated Track */}
         <div
@@ -68,7 +68,7 @@ export default function TechStackCarousel() {
                 />
               </div>
               
-              <span className="text-[#0F172A] font-bold text-sm">
+              <span className="text-neutral-900 font-bold text-sm">
                 {tech.name}
               </span>
             </div>
