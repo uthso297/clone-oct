@@ -33,7 +33,7 @@ const ChatbotUI = () => {
       {isOpen && (
         <div className="mb-4 w-80 sm:w-96 h-125 bg-white rounded-2xl shadow-2xl border border-gray-100 flex flex-col overflow-hidden animate-in slide-in-from-bottom-5">
           {/* Header */}
-          <div className="bg-[#1A1C21] p-4 flex justify-between items-center text-white">
+          <div className="bg-neutral-900 p-4 flex justify-between items-center text-white">
             <div className="flex items-center gap-3">
               <div className="p-2 bg-white/10 rounded-lg">
                 <Bot size={20} />
@@ -82,7 +82,7 @@ const ChatbotUI = () => {
       {/* Toggle Button (FAB) */}
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="w-14 h-14 bg-[#1A1C21] text-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform active:scale-95"
+        className="w-14 h-14 bg-neutral-900 text-white rounded-full flex items-center justify-center shadow-lg hover:scale-105 transition-transform active:scale-95"
       >
         {isOpen ? <X size={24} /> : <MessageSquare size={24} />}
       </button>

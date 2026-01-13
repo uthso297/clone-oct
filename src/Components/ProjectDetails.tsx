@@ -74,7 +74,7 @@ export default function ProjectDetails() {
   const prevMedia = (idx: number, setIdx: { (value: SetStateAction<number>): void; (value: SetStateAction<number>): void; (arg0: number): unknown; }, length: number) => setIdx((idx - 1 + length) % length);
 
   return (
-    <div className="min-h-screen bg-[#F8F9FB] text-[#1A1C21]">
+    <div className="min-h-screen bg-white text-neutral-900">
       <div className="max-w-300 mx-auto px-6 py-12">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           
