@@ -102,7 +102,7 @@ export default function ProvenResults() {
 
         {/* Bottom CTA Button */}
         <div className="flex justify-center">
-          <button className="flex items-center gap-2 px-8 py-4 bg-[#F1F5F9] hover:bg-[#E2E8F0] text-neutral-900 rounded-full font-bold text-sm transition-all shadow-sm">
+          <button className="flex items-center gap-2 px-8 py-4 bg-gray-100 hover:bg-gray-200 text-neutral-900 rounded-full font-bold text-sm transition-all shadow-sm">
             View All Projects
             <ArrowUpRight className="w-4 h-4" />
           </button>

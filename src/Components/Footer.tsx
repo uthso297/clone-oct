@@ -7,7 +7,7 @@ export default function Footer() {
         
         {/* Brand & Copyright */}
         <div className="text-center md:text-left">
-          <h2 className="text-xl font-bold text-[#0F172A] mb-2">
+          <h2 className="text-xl font-bold text-neutral-900 mb-2">
             Automation Experts
           </h2>
           <p className="text-neutral-500 text-sm">
@@ -19,13 +19,13 @@ export default function Footer() {
         <nav className="flex items-center gap-8">
           <a 
             href="/privacy" 
-            className="text-neutral-500 hover:text-[#0F172A] text-sm font-medium transition-colors"
+            className="text-neutral-500 hover:text-neutral-900 text-sm font-medium transition-colors"
           >
             Privacy Policy
           </a>
           <a 
             href="/terms" 
-            className="text-neutral-500 hover:text-[#0F172A] text-sm font-medium transition-colors"
+            className="text-neutral-500 hover:text-neutral-900 text-sm font-medium transition-colors"
           >
             Terms of Service
           </a>
@@ -33,7 +33,7 @@ export default function Footer() {
             href="https://twitter.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="text-neutral-500 hover:text-blue-400 text-sm font-medium transition-colors"
+            className="text-neutral-500 hover:text-gray-500 text-sm font-medium transition-colors"
           >
             Twitter
           </a>
