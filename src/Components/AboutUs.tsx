@@ -25,7 +25,7 @@ const stats = [
 
 export default function AboutUs() {
   return (
-    <section className="bg-[#F8FAFC] py-24 px-6">
+    <section className="bg-white py-24 px-6">
       <div className="max-w-6xl mx-auto">
         
         {/* Section Header */}

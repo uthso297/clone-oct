@@ -22,7 +22,7 @@ export default function TheCollective() {
   const [activeMember, setActiveMember] = useState(team[0]);
 
   return (
-    <section className="bg-[#020617] py-24 px-6 min-h-screen flex items-center">
+    <section className="bg-black py-24 px-6 min-h-screen flex items-center">
       <div className="max-w-7xl mx-auto w-full">
         
         {/* Header Section */}

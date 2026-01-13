@@ -20,7 +20,7 @@ const achievements = [
 
 export default function OurAchievements() {
   return (
-    <section className="bg-[#F8FAFC] py-24 px-6">
+    <section className="bg-white py-24 px-6">
       <div className="max-w-7xl mx-auto">
         
         {/* Section Header */}
